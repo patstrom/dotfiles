@@ -204,6 +204,6 @@ bindsym XF86MonBrightnessDown exec xbacklight -de 20 # decrease screen brightnes
 #run firefox on login
 exec firefox
 #set wallpaper
-exec_always feh --bg-scale /home/patrik/photos/wallpaper.jpg
+exec_always feh --bg-scale /home/patrik/photos/.wallpaper.jpg
 
 

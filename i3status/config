@@ -28,7 +28,7 @@ volume master {
 }
 
 wireless _first_ {
-        format_up = "W:(%quality, %bitrate, %frequency) %ip"
+        format_up = "W:(%quality, %frequency) %ip"
         format_down = "W:down"
 }
 
