@@ -1,0 +1,10 @@
+[options]
+mouse_autohide = true
+clickable_url = true
+search_wrap = true
+
+font = DejaVuSansMono 14
+
+[colors]
+foreground = #dcdccc
+background = #3f3f3f
