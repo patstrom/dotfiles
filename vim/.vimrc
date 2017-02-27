@@ -8,3 +8,6 @@ set expandtab
 syntax on
 color desert
 
+" Show full filepath all the time
+set laststatus=2
+set statusline+=%F
