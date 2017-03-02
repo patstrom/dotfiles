@@ -1,0 +1,23 @@
+[core]
+	editor = vim
+
+[alias]
+	s = status -s
+	ss = status
+	d = diff
+	c = commit
+	a = add
+	l = log
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    unmerged = blue bold
+
+
+[color "status"]
+    added=green
+    changed=yellow
+    untracked=red
