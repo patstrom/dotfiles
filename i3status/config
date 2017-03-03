@@ -27,7 +27,7 @@ volume master {
     align = center
 	device = "pulse"
 	format = "♪%volume"
-	format_muted = "♪: muted(%volume)"
+	format_muted = "muted ♪(%volume)"
 }
 
 wireless _first_ {
