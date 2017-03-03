@@ -118,9 +118,10 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace $w10
 
-#force application to run on workspace
+# force application to run on workspace
 assign [class="Firefox"] $w2
-assign [class="Spotify"] $w10
+# stupid Spotify doesn't really attach WM-class on startup
+for_window [class="Spotify"] move to workspace $w10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
