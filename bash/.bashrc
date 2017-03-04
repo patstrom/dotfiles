@@ -5,6 +5,7 @@ PS1='[\u@\h \W]\$ '
 
 alias please='sudo $(history -p !!)'
 alias ll='ls -ABhlog --color=auto'
+LS_COLORS=$LS_COLOR:'di=0;32:' ; export LS_COLORS
 
 alias vim='nvim'
 alias v='vim'
@@ -15,10 +16,11 @@ alias g='git'
 alias sudo='sudo -E'
 
 #Display git branch in terminal
+# https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
  
 #  ssh-agent
 #if ! pgrep -u "$USER" ssh-agent > /dev/null; then
