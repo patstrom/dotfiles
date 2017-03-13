@@ -46,10 +46,6 @@ set expandtab
 set smarttab
 set autoindent
 
-" Highligt search results
-set hlsearch
-" Cancel search with esc
-nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 
 " Highlight matching parenthesis
 " set showmatch
@@ -66,3 +62,9 @@ set colorcolumn=90
 
 " Line numbers
 set number
+
+" Highligt search results
+set hlsearch
+" Cancel search with enter (using esc here caused sudo vim to start with
+" replace mode)
+nnoremap <silent> <Enter> :nohlsearch<Bar>:echo<CR>
