@@ -37,12 +37,13 @@ autocmd VimResized * wincmd =
 set splitbelow
 set splitright
 
-" Show existing tabs with 4 spaces
+" Show existing tabs with x spaces
 set tabstop=4
-" Indent (>) with 4 spaces
+" Indent (>) with x spaces
 set shiftwidth=4
-" On pressing tab, insert 4 spaces
+" Expand tab into spaces
 set expandtab
+
 set smarttab
 set autoindent
 

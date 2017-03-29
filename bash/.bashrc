@@ -9,6 +9,7 @@ LS_COLORS=$LS_COLOR:'di=0;32:' ; export LS_COLORS
 
 alias vim='nvim'
 alias v='vim'
+alias vs='vim -O'
 
 alias g='git'
 
