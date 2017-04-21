@@ -74,3 +74,6 @@ set hlsearch
 " Cancel search with enter (using esc here caused sudo vim to start with
 " replace mode)
 nnoremap <silent> <Enter> :nohlsearch<Bar>:echo<CR>
+
+" Automatically wrap text at 72 characters when writing vim commits
+au FileType gitcommit setlocal tw=72
