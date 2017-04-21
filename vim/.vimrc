@@ -15,11 +15,6 @@ nnoremap <silent> <A-j> <C-w>j
 nnoremap <silent> <A-k> <C-w>k
 nnoremap <silent> <A-l> <C-w>l
 
-tnoremap <silent> <A-h> <C-w>h
-tnoremap <silent> <A-j> <C-w>j
-tnoremap <silent> <A-k> <C-w>k
-tnoremap <silent> <A-l> <C-w>l
-
 " Use alt-[arrow keys] to resize active split
 nnoremap <silent> <A-Up> :wincmd -<CR>
 nnoremap <silent> <A-Down> :wincmd +<CR>
