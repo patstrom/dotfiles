@@ -6,6 +6,8 @@ PS1='[\u@\h \W]\$ '
 alias please='sudo $(history -p !!)'
 alias ll='ls -ABhlog --color=auto'
 LS_COLORS=$LS_COLOR:'di=0;32:' ; export LS_COLORS
+alias grep='grep --color=auto'
+GREP_COLORS=$GREP_COLOR:'di=0;32:' ; export GREP_COLORS
 
 alias vim='nvim'
 alias v='vim'
