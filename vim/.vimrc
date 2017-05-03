@@ -4,6 +4,9 @@ filetype plugin on
 
 set autoread
 
+" nvim cursor
+set guicursor=
+
 " set <Leader> to space
 let mapleader=" "
 
