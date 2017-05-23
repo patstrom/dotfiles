@@ -10,8 +10,7 @@ alias grep='grep --color=auto'
 GREP_COLORS=$GREP_COLOR:'di=0;32:' ; export GREP_COLORS
 
 alias vim='nvim'
-alias v='vim'
-alias vs='vim -O'
+alias v='vim -O'
 
 alias g='git'
 
