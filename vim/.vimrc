@@ -10,7 +10,11 @@ set guicursor=
 " set <Leader> to space
 let mapleader=" "
 
+" Switch to last file
 nnoremap <Leader><Leader> :e#<CR>
+
+" Exit insert mode
+inoremap jj <ESC>
 
 " Use alt-[hjkl] to select the active split!
 nnoremap <silent> <A-h> <C-w>h
