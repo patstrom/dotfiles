@@ -211,9 +211,9 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle #mute so
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 #startup programs
-exec chromium
-exec termite
-exec --no-startup-id redshift
+exec --no-startup-id exec chromium
+exec --no-startup-id exec termite
+exec --no-startup-id  exec redshift
 
 #set wallpaper
-exec_always feh --bg-scale /home/patrik/photos/.wallpaper.jpg
+exec_always --no-startup-id exec--no-startup-id e feh --bg-fill /home/patrik/photos/.wallpaper.jpg
