@@ -3,7 +3,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-alias please='sudo $(history -p !!)'
+alias please='sudo "$BASH" -c "$(history -p !!)"'
 alias ll='ls -ABhlog --color=auto'
 LS_COLORS=$LS_COLOR:'di=0;32:' ; export LS_COLORS
 alias grep='grep --color=auto'
