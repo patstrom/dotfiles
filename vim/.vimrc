@@ -80,9 +80,13 @@ nnoremap <silent> <Enter> :nohlsearch<Bar>:echo<CR>
 " Automatically wrap text at 72 characters when writing vim commits
 au FileType gitcommit setlocal tw=72
 
+" Go imports
+let g:go_fmt_command = "goimports"
+
 " Plugin
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'rust-lang/rust.vim'
+Plug 'fatih/vim-go'
 
 call plug#end()
