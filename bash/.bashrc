@@ -17,6 +17,8 @@ alias g='git'
 #Preserve environment
 alias sudo='sudo -E'
 
+alias update='sudo pacman -Suy'
+
 #Display git branch in terminal
 # https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
 parse_git_branch() {
