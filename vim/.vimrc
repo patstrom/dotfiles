@@ -80,6 +80,13 @@ au FileType gitcommit setlocal tw=72
 " Go imports
 let g:go_fmt_command = "goimports"
 
+" Function that removes trailing whitespaces from every line in the file
+function TrimWhitespace()
+    let l:save = winsaveview()
+    %s#\s\+$##e
+    call winrestview(l:save)
+endfun
+
 " Plugin
 call plug#begin('~/.local/share/nvim/plugged')
 
