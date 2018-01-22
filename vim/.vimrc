@@ -42,11 +42,11 @@ set splitbelow
 set splitright
 
 " Show existing tabs with x spaces
-set tabstop=4
+set tabstop=2
 " Indent (>) with x spaces
-set shiftwidth=4
+set shiftwidth=2
 " Expand tab into spaces
-set expandtab
+" set expandtab
 
 set smarttab
 set autoindent
