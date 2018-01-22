@@ -81,7 +81,7 @@ au FileType gitcommit setlocal tw=72
 let g:go_fmt_command = "goimports"
 
 " Function that removes trailing whitespaces from every line in the file
-function TrimWhitespace()
+function! TrimWhitespace()
     let l:save = winsaveview()
     %s#\s\+$##e
     call winrestview(l:save)
