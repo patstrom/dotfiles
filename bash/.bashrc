@@ -14,6 +14,8 @@ alias v='vim -O'
 
 alias g='git'
 
+alias grep='rg'
+
 #Preserve environment
 alias sudo='sudo -E'
 
