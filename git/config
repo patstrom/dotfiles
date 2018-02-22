@@ -5,6 +5,7 @@
 	s = status -s
 	ss = status
 	d = diff
+	ds = diff --staged
 	c = commit
 	a = add
 	l = "log -n 10 --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
