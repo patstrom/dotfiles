@@ -1,3 +1,11 @@
+" Plugins
+call plug#begin('~/.local/share/nvim/plugged')
+
+Plug 'rust-lang/rust.vim'
+Plug 'fatih/vim-go'
+
+call plug#end()
+
 filetype on
 filetype indent on
 filetype plugin on
@@ -77,6 +85,9 @@ nnoremap <silent> <Enter> :nohlsearch<Bar>:echo<CR>
 " Automatically wrap text at 72 characters when writing vim commits
 au FileType gitcommit setlocal tw=72
 
+" Always use spaces when writing YAML
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " Go imports
 let g:go_fmt_command = "goimports"
 
@@ -86,11 +97,3 @@ function! TrimWhitespace()
     %s#\s\+$##e
     call winrestview(l:save)
 endfun
-
-" Plugin
-call plug#begin('~/.local/share/nvim/plugged')
-
-Plug 'rust-lang/rust.vim'
-Plug 'fatih/vim-go'
-
-call plug#end()

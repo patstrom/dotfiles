@@ -16,6 +16,10 @@ alias g='git'
 
 alias grep='rg'
 
+# Kubernetes
+alias kc='kubectl'
+export KUBECONFIG=$KUBECONFIG:~/.kube/abios-k8s
+
 #Preserve environment
 alias sudo='sudo -E'
 
@@ -26,6 +30,7 @@ alias update='sudo pacman -Suy'
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+export PROMPT_DIRTRIM=3 # Only show 3 directories
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
  
 #  ssh-agent
@@ -35,4 +40,3 @@ export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 #if [[ "$SSH_AGENT_PID" == "" ]]; then
 #    eval "$(<~/.ssh)"
 #fi
-
