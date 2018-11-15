@@ -9,9 +9,9 @@
 	c = commit
 	a = add
 	l = "log -n 10 --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-    b = branch
-    co = checkout
-    unstage = reset HEAD
+	b = branch
+	co = checkout
+	unstage = reset HEAD
 
 [color "diff"]
     meta = yellow bold
@@ -27,3 +27,5 @@
     untracked=red
 [pull]
 	rebase = true
+[gpg]
+	program = gpg2
