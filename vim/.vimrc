@@ -88,6 +88,16 @@ au FileType gitcommit setlocal tw=72
 " Always use spaces when writing YAML
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+" Toggle in and out of relative/absolute/hybrid linenumbers at appropriate
+" times
+:set number relativenumber
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
+
 " Go imports
 let g:go_fmt_command = "goimports"
 
