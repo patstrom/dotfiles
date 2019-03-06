@@ -29,3 +29,9 @@
 	rebase = true
 [gpg]
 	program = gpg2
+
+[url "git@gitlab.com:abios"]
+	insteadOf = https://gitlab.com/abios
+
+[url "git@github.com:AbiosGaming"]
+	insteadOf = https://github.com/AbiosGaming

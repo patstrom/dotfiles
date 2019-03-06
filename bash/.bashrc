@@ -18,7 +18,7 @@ alias grep='rg'
 
 # Kubernetes
 alias kc='kubectl'
-export KUBECONFIG=$KUBECONFIG:~/.kube/abios-k8s
+export KUBECONFIG=$KUBECONFIG:~/.kube/abios
 
 #Preserve environment
 alias sudo='sudo -E'
