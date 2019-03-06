@@ -3,8 +3,17 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
+
+" airline theme
+let g:airline_theme = 'tomorrow'
+
+" Go imports
+let g:go_fmt_command = "goimports"
 
 filetype on
 filetype indent on
@@ -17,6 +26,10 @@ set guicursor=
 
 " set <Leader> to space
 let mapleader=" "
+"
+" NERDTree toggle
+nnoremap <Leader>t :NERDTreeToggle <CR>
+
 
 " Switch to last file
 nnoremap <Leader><Leader> :e#<CR>
@@ -97,9 +110,6 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
-
-" Go imports
-let g:go_fmt_command = "goimports"
 
 " Function that removes trailing whitespaces from every line in the file
 function! TrimWhitespace()
