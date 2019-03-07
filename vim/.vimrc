@@ -5,7 +5,6 @@ Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
