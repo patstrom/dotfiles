@@ -26,9 +26,6 @@ set guicursor=
 " set <Leader> to space
 let mapleader=" "
 "
-" NERDTree toggle
-nnoremap <Leader>t :NERDTreeToggle <CR>
-
 
 " Switch to last file
 nnoremap <Leader><Leader> :e#<CR>
