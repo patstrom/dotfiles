@@ -14,6 +14,12 @@ let g:airline_theme = 'tomorrow'
 " Go imports
 let g:go_fmt_command = "goimports"
 
+" Rust formatting
+let g:rustfmt_autosave = 1
+
+" Allow :find to recursively search
+set path+=**
+
 filetype on
 filetype indent on
 filetype plugin on
