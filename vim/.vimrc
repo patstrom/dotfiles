@@ -19,6 +19,7 @@ let g:rustfmt_autosave = 1
 
 " Allow :find to recursively search
 set path+=**
+cabbrev vsf vert sf
 
 filetype on
 filetype indent on
