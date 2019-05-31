@@ -3,7 +3,7 @@ mouse_autohide = true
 clickable_url = true
 search_wrap = true
 
-font = DejaVuSansMono 14
+font = DejaVuSansMono 12
 
 [colors]
 foreground = #dcdccc
