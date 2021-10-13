@@ -30,7 +30,7 @@ font pango:DejaVu Sans Mono 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -127,7 +127,7 @@ bindsym $mod+Shift+0 move container to workspace $w10
 # force application to run on workspace
 assign [class="Firefox"] $w2
 # stupid Spotify doesn't really attach WM-class on startup
-for_window [class="Spotify"] move to workspace $w10
+#for_window [class="Spotify"] move to workspace $w10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -196,7 +196,7 @@ bar {
 }
 
 # lock screen
-bindsym $mod+Shift+x exec i3lock --color "$inactive-bg-color" 
+bindsym $mod+Shift+x exec i3lock --color "$inactive-bg-color"
 
 #start dmenu
 bindsym $mod+d exec dmenu_run -i -fn "DejaVu Sans Mono 10" -l 10 -nb "$inactive-bg-color" -nf "$text-color" -sb "$bg-color"
@@ -207,13 +207,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id exec pactl set-sink-volume 0 -
 bindsym XF86AudioMute exec --no-startup-id exec pactl set-sink-mute 0 toggle #mute sound
 
 #Screen brightness controls
-#bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-#bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 #startup programs
-exec --no-startup-id exec firefox
-exec --no-startup-id exec termite
-exec --no-startup-id  exec redshift
+#exec --no-startup-id exec firefox
+exec --no-startup-id exec alacritty
+#exec --no-startup-id exec redshift
 
 #set wallpaper
-exec_always --no-startup-id exec feh --bg-fill /home/patrik/photos/.wallpaper.jpg
+#exec_always --no-startup-id exec feh --bg-fill /home/patrik/photos/.wallpaper.jpg

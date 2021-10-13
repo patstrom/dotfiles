@@ -15,6 +15,7 @@
 	b = branch
 	co = checkout
 	unstage = reset HEAD
+	up="!git remote update -p; git merge --ff-only @{u}"
 
 [color "diff"]
     meta = yellow bold

@@ -8,9 +8,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
-" airline theme
-let g:airline_theme = 'tomorrow'
-
 " Go imports
 let g:go_fmt_command = "goimports"
 
@@ -80,14 +77,26 @@ set autoindent
 " set showmatch
 
 syntax on
-colorscheme tomorrow_night_eighties
+set termguicolors
+
+function! Light()
+	let g:airline_theme = 'solarized'
+	colorscheme flattened_light
+endfun
+
+function! Dark()
+	let g:airline_theme = 'base16_twilight'
+	colorscheme flattened_dark
+endfun
+
+call Light()
 
 " Show full filepath all the time
 set laststatus=2
 set statusline+=%F
 
 " Set a colored column
-set colorcolumn=90
+set colorcolumn=120
 
 " Line numbers
 set number
