@@ -79,17 +79,10 @@ set autoindent
 syntax on
 set termguicolors
 
-function! Light()
-	let g:airline_theme = 'solarized'
-	colorscheme flattened_light
-endfun
+set background=light
+let g:airline_theme = 'solarized'
+colorscheme selenized
 
-function! Dark()
-	let g:airline_theme = 'base16_twilight'
-	colorscheme flattened_dark
-endfun
-
-call Light()
 
 " Show full filepath all the time
 set laststatus=2
